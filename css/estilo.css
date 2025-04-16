@@ -18,7 +18,31 @@
 
 
 body{
-    background-color: white;
+    background-color: black;
+
+}
+h1{
+    color: #ffffff;
+    font-size: 2em;
+}
+
+h2{
+    color: #ff0000;
+    font-size: 2.5em;
+}
+
+h3{
+    color: #ff0000;
+    font-size: 2em;
+}
+
+p{
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+footer{
+    color: #ff0000;
 }
 
 header{
@@ -55,6 +79,21 @@ header .container{
     font-size: 2em;
     font-weight: bold;
 }
+
+
+.banner{
+    background: url(../img/banner3.jpg) no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 2px 5px 5px #ff0000;
+}
+
 @media (max-width:675px){
     header .container{
         flex-direction: column;
@@ -63,6 +102,9 @@ header .container{
     nav ul{
         margin-top: 10px;
         flex-direction: column;
+    }
+    .banner{
+        margin-top: 170px;
     }
 }
 
