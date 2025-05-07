@@ -22,6 +22,10 @@ body{
 
 }
 
+section{
+    scroll-margin-top: 100px;
+}
+
 p{
     color: #ffffff;
 }
@@ -82,7 +86,7 @@ header .container{
 
 .banner{
     background: url(../img/banner3.jpg) no-repeat center/cover;
-    height: 600px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -154,8 +158,8 @@ header .container{
 }
 
 .hex{
-    width: 140px;
-    height: 120px;
+    width: 170px;
+    height: 150px;
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     overflow: hidden;
     background-color: #000000;
@@ -181,6 +185,10 @@ header .container{
     }
     .banner{
         margin-top: 170px;
+    }
+
+    section{
+        scroll-margin-top: 200px;
     }
 
     
