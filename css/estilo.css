@@ -18,7 +18,7 @@
 
 
 body{
-    background-color: black;
+    background-color: #000000;
 
 }
 
@@ -101,7 +101,7 @@ header .container{
 
 #Sobre{
     padding: 35px;
-    background-color: darkgray;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -172,6 +172,38 @@ header .container{
     object-fit: cover;
 }
 
+.imgcard{
+    width: 70%;
+}
+
+
+#Filmes .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 30px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#Filmes .item{
+    background-color: darkgray;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(177, 174, 174);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#Filmes .item:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(177, 174, 174);
+}
+
+#Filmes .item:active{
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px rgba(177, 174, 174);
+}
 
 
 @media (max-width:675px){
