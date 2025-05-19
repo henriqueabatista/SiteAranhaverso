@@ -205,6 +205,19 @@ header .container{
     box-shadow: 0 4px 6px rgba(177, 174, 174);
 }
 
+#Filmes .item p{
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+#Filmes .card img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width:675px){
     header .container, .sobre-container{
