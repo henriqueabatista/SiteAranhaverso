@@ -218,6 +218,65 @@ header .container{
     margin-bottom: 10px;
 }
 
+.modal{
+    background: darkgray;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(134, 126, 126, 0.1);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.modal h3{
+    margin-top: 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(134, 126, 126, 0.1);
+    display: none;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal2:target{
+    display: flex;
+}
+
+.modal-content{
+    background: darkgrey;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 20 px rgba(134, 126, 126, 0.1)
+}
+
+.close-btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ff0000;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+}
 
 @media (max-width:675px){
     header .container, .sobre-container{
