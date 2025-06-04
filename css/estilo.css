@@ -7,7 +7,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: Arial, sans-serif;
+ font-family:   "Merienda", cursive;
  scroll-behavior: smooth;
 }
 .container{
@@ -222,8 +222,8 @@ header .container{
     background: darkgray;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(134, 126, 126, 0.1);
-    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(161, 158, 158, 0.521);
+    margin-top: 10px;
     margin: auto;
     text-align: center;
 }
@@ -243,29 +243,31 @@ header .container{
     cursor: pointer;
 }
 
-.modal2{
+.modal{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(134, 126, 126, 0.1);
+    background: rgba(161, 158, 158, 0.521);
     display: none;
    justify-content: center;
    align-items: center;
 }
 
-.modal2:target{
+.modal:target{
     display: flex;
 }
 
 .modal-content{
+    max-height: 90vh;
+    overflow-y: auto;
     background: darkgrey;
     padding: 30px;
     border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 5px 20 px rgba(134, 126, 126, 0.1)
+    max-width: 600px;
+    text-align: justify;
+    box-shadow: 0 5px 20 px rgba(161, 158, 158, 0.521);
 }
 
 .close-btn{
@@ -277,6 +279,20 @@ header .container{
     border-radius: 6px;
     text-decoration: none;
 }
+
+section{
+    scroll-margin-top: 200px;
+}
+
+.modal{
+    margin-top: 100px;
+}
+
+.modal-content{
+    max-height: 60vh;
+}
+
+
 
 @media (max-width:675px){
     header .container, .sobre-container{
@@ -293,6 +309,14 @@ header .container{
 
     section{
         scroll-margin-top: 200px;
+    }
+
+    .modal{
+        margin-top: 100px;
+    }
+    
+    .modal-content{
+        max-height: 60vh;
     }
 
     
