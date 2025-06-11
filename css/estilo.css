@@ -286,6 +286,15 @@ section{
 
 .modal{
     margin-top: 100px;
+    
+}
+
+.modal p{
+    padding: 20px;
+}
+
+.modal h3{
+    text-align: center;
 }
 
 .modal-content{
