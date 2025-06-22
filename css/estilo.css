@@ -145,6 +145,18 @@ header .container{
     font-size: 0.9em;
 }
 
+.modal-content .link{
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.container .link{
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
 .Fonte{
     font-size: 0.9em;
 }
@@ -301,29 +313,53 @@ section{
     max-height: 60vh;
 }
 
-.galeria{
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1400;
-    margin: auto;
- 
+#galeria {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: transparent;
+    text-align: center;
 }
 
-.imgaleria{
-    width: 230px;
-    height: 230px;
-    padding: 10px;
-   
+#galeria h2 {
+    margin-bottom: 30px;
+    color: #333333;
+    font-size: 2.5rem;
 }
 
-.imgaleria img{
-    width: 100%;
-    height: 100%;
+.foto-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 100%;
     
 }
 
+.foto-galeria, .foto{
+    padding: 10px;
+}
+
+
+.imgaleria {
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.foto {
+    width: 220px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.foto:hover {
+    transform: scale(1.05);
+}
 
 @media (max-width:675px){
     header .container, .sobre-container{
@@ -348,6 +384,16 @@ section{
     
     .modal-content{
         max-height: 60vh;
+    }
+
+   .item{
+    max-width: 90%;
+    margin: 21px;
+   }
+
+    .foto-galeria {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     
