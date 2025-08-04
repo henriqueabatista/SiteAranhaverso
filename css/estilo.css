@@ -99,6 +99,40 @@ header .container{
     text-shadow: 2px 5px 5px #ff0000;
 }
 
+.bannercontato{
+    background: url(../img/novobanner.jpeg) no-repeat center/cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 5px 5px #ff0000;
+}
+
+.ctt{
+    text-align: center;
+    padding: 20px;
+
+}
+
+.footerctt{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.logoctt a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #ffffff;
+}
+
 #Sobre{
     padding: 35px;
     background-color: #000000;
