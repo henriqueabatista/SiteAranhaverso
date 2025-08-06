@@ -35,6 +35,105 @@
         
         <section id="Contato" class="ctt">
             <h2>Contato</h2>
+            <section id="contato"> 
+                <div class="container">
+                    <h1 class="centraliza"></h1>
+                    <form class="formulario-contato" action="https://formsubmit.co/henriqueabatista09@gmail.com" method="post">
+                        <div class="grupo-form">
+                          <label for="nome">Nome completo:</label>
+                          <input type="text" id="nome" name="nome" required>
+                        </div>
+                  
+                        <div class="grupo-form">
+                          <label for="email">E-mail:</label>
+                          <input type="email" id="email" name="email" required>
+                        </div>
+                  
+                        <div class="grupo-form">
+                          <label for="idade">Idade:</label>
+                          <input type="number" id="idade" name="idade" min="10" max="120">
+                        </div>
+
+                        <div class="grupo-form">
+                            <label>Gênero:</label>
+                            <input type="radio" name="genero" value="feminino"> Feminino
+                            <input type="radio" name="genero" value="masculino"> Masculino
+                            <input type="radio" name="genero" value="outro"> Outro
+                          </div>
+
+                          <div class="grupo-form">
+                            <label>Filme Favorito:</label>
+                            <input type="radio" name="Filme Favorito" value="Homem-Aranha no Aranhaverso"> Homem-Aranha no Aranhaverso
+                            <input type="radio" name="Filme Favorito" value="Homem-Aranha Através do Aranhaverso"> Homem-Aranha Através do Aranhaverso
+                            
+                          </div>
+
+                          
+                        <div class="grupo-form">
+                            <label for="area">O quanto você gosta dos filmes?</label>
+                            <select id="area" name="area">
+                              <option value="ml">1</option>
+                              <option value="cv">2</option>
+                              <option value="pln">3</option>
+                              <option value="generativa">4</option>
+                              <option value="pln">5</option>
+                              <option value="pln">6</option>
+                              <option value="pln">7</option>
+                              <option value="pln">8</option>
+                              <option value="pln">9</option>
+                              <option value="pln">10</option>
+                            </select>
+                          </div>
+
+                          <div class="grupo-form">
+                            <label>Seus personagens favoritos?</label>
+                            <input type="checkbox" name="uso[]" value="chatgpt"> Miles Morales
+                            <input type="checkbox" name="uso[]" value="dalle"> Gwen Stacy
+                            <input type="checkbox" name="uso[]" value="midjourney"> Peter Parker 
+                            <input type="checkbox" name="uso[]" value="bard"> Miguel O'Hara
+                            <input type="checkbox" name="uso[]" value="bard"> Hobie Brown
+                          </div>
+
+                          <div class="grupo-form">
+                          <label>O quanto está ansioso para o terceiro filme?</label>
+                          <input type="range" min="0" max="100" name="interesse">
+                        </div>
+
+                        <div class="grupo-form">
+                            <label>O que te chama atenção nos filmes?</label>
+                            <input type="checkbox" name="uso[]" value="chatgpt">  Animação/estilo visual
+                            <input type="checkbox" name="uso[]" value="dalle"> Trilha sonora
+                            <input type="checkbox" name="uso[]" value="midjourney"> Personagens 
+                            <input type="checkbox" name="uso[]" value="bard"> Enredo
+                            <input type="checkbox" name="uso[]" value="bard"> Outro
+                          </div>
+
+                          <div class="grupo-form">
+                            <label for="mensagem">Você recomendaria os filmes para outras pessoas? Por quê?:</label>
+                            <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+                          </div>
+
+                          
+                          <div class="grupo-form">
+                            <label for="mensagem">Quais foram os momentos mais marcantes em sua opinião?:</label>
+                            <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+                          </div>
+                  
+                        
+                        
+                  
+                        <div class="grupo-form centraliza">
+                          <button type="submit" class="btn">Enviar</button>
+                          <input type="hidden" name="_captcha" value="false"> 
+                          <input type="hidden" name="_next" value="">       
+                                     
+                        </div>
+                      </form>
+                    </div>
+    
+                   
+                </div>
+            </section>
             
         </section>
 
