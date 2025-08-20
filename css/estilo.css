@@ -148,6 +148,7 @@ header .container{
     flex-direction: column;
     margin-bottom: 20px;
     font-size: 1.2em;
+    text-align: left;
   }
 
   .grupo-form input,
@@ -170,6 +171,49 @@ header .container{
     margin-bottom: 5px;
     font-weight: bold;
   }
+
+  .tabela {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+.tabela h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #1e1e1e;
+}
+
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #ffffff;
+}
+
+.tabela th, .tabela td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.tabela th, .film{
+    width: 10px;
+}
+
+.tabela th {
+   
+    background-color: #ff0000 ;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabela tr{
+    background-color:darkgray;
+
+}
 
 
 
