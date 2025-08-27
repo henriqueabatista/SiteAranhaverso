@@ -8,162 +8,171 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
     <title>Desvie dos Obstáculos</title>
     <style>
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family:   "Merienda", cursive;
- scroll-behavior: smooth;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Merienda", cursive;
+            scroll-behavior: smooth;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-decoration: none;
+        }
+        header{
+            background-color: rgb(255, 1, 1);
+            color: #ffffff;
+            padding: 15px;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            z-index: 1000;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li{
+            margin-left: 20px;
+        }
+        nav ul li a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        header .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-img{
+   width: auto;
+   height: 60px;
 }
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-decoration: none;
-}
-header{
-    background-color: rgb(255, 1, 1);
-    color: #ffffff;
-    padding: 15px;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    z-index: 1000;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-nav ul li{
-    margin-left: 20px;
-}
-nav ul li a{
-    color: #ffffff;
-    text-decoration: none;
-}
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.logo{
-    font-size: 2em;
-    font-weight: bold;
-}
-body {
-    padding-top: 120px; /* para o jogo ficar abaixo do header fixo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #000000;
-}
-
-/* Título branco */
-h1 {
-    color: white;
-    margin-bottom: 15px;
-}
-
-#game-container {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    border: 2px solid #333;
-    overflow: hidden;
-    background-color: darkgray;
-    display: none; /* escondido até iniciar */
-}
-
-#player {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background-image: url(img/galeria/Miles\ Morales.jpg);
-    background-color: #4CAF50;
-    background-size: cover;
-    background-position: center;
-}
-
-.obstacle {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-image: url(img/galeria/Rei\ do\ Crime.jpg);
-    background-color: #FF5722;
-    background-size: cover;
-    background-position: center;
-}
-
-#info-container {
-    margin-top: 20px;
-    text-align: center;
-    display: none; /* escondido até iniciar */
-}
-        
-#timer {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-#start-button, #restart-button {
-    margin-top: 15px;
-    padding: 12px 24px;
-    font-size: 18px;
-}
-
-#restart-button {
-    display: none;
-}
-
-/* Controles para mobile */
-#controls {
-    display: none;
-    margin-top: 20px;
-    text-align: center;
-}
-#controls button {
-    width: 60px;
-    height: 60px;
-    margin: 5px;
-    font-size: 24px;
-    border-radius: 50%;
-    border: none;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Mostrar controles apenas em telas menores */
-@media (max-width: 768px) {
-    #controls {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-}
+        body {
+            /* Adiciona um padding padrão para desktops, garantindo que o conteúdo não fique escondido. */
+            padding-top: 140px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #000000;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        #game-container {
+            position: relative;
+            width: 90%; 
+            max-width: 400px; 
+            height: 60vh; 
+            max-height: 600px; 
+            border: 2px solid #333;
+            overflow: hidden;
+            background-color: darkgray;
+            display: none;
+        }
+        #player {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10%; 
+            max-width: 40px; 
+            height: 40px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            background-size: cover;
+            background-position: center;
+            background-image: url(img/galeria/Miles\ Morales.jpg);
+        }
+        .obstacle {
+            position: absolute;
+            width: 15%; 
+            max-width: 60px; 
+            height: 60px;
+            background-color: #FF5722;
+            background-size: cover;
+            background-position: center;
+            background-image: url(img/galeria/Rei\ do\ Crime.jpg);
+        }
+        #info-container {
+            margin-top: 20px;
+            text-align: center;
+            display: none; 
+        }
+        #timer {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+        #start-button, #restart-button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            font-size: 18px;
+        }
+        #restart-button {
+            display: none;
+        }
+        /* Controles para mobile */
+        #controls {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #controls button {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            font-size: 24px;
+            border-radius: 50%;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        /* Media Queries para responsividade */
+        @media (max-width:675px) {
+            /* Adiciona um padding-top maior em telas pequenas para compensar o header. */
+            body {
+                padding-top: 300px; 
+            }
+            #controls {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            header .container, .sobre-container{
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul{
+                margin-top: 10px;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-               <a href="index.html" style="color:white; text-decoration:none;">Logo</a> 
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="img/logo11.png" alt="" class="logo-img">   
+                </a>
             </div>
             <nav>
                 <ul>
@@ -179,7 +188,6 @@ button {
 
     <h1>Desvie dos Obstáculos</h1>
 
-    <!-- Botão de início -->
     <button id="start-button">Iniciar Jogo</button>
 
     <div id="game-container">
@@ -190,7 +198,6 @@ button {
         <button id="restart-button">Jogar Novamente</button>
     </div>
 
-    <!-- Controles para mobile -->
     <div id="controls">
         <button id="left">⬅️</button>
         <button id="right">➡️</button>
@@ -215,8 +222,9 @@ button {
         let playerX = 0; 
         const moveStep = 20;
 
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
         function startGame() {
-            // Mostrar jogo e info
             gameContainer.style.display = 'block';
             infoContainer.style.display = 'block';
             startButton.style.display = 'none';
@@ -225,7 +233,7 @@ button {
             timer = 0;
             timerDisplay.textContent = `Tempo: 0s`;
             restartButton.style.display = 'none';
-            playerX = gameContainer.clientWidth / 2 - 20;
+            playerX = gameContainer.clientWidth / 2 - player.clientWidth / 2;
             player.style.left = `${playerX}px`;
 
             document.querySelectorAll('.obstacle').forEach(obstacle => obstacle.remove());
@@ -241,21 +249,21 @@ button {
             }
         }
 
-        // Controle com mouse
-        document.addEventListener('mousemove', (e) => {
-            if (!isGameOver && gameContainer.style.display === 'block') {
-                const gameRect = gameContainer.getBoundingClientRect();
-                let mouseX = e.clientX - gameRect.left;
+        if (!isMobile) {
+            document.addEventListener('mousemove', (e) => {
+                if (!isGameOver && gameContainer.style.display === 'block') {
+                    const gameRect = gameContainer.getBoundingClientRect();
+                    let mouseX = e.clientX - gameRect.left;
 
-                if (mouseX < 20) mouseX = 20;
-                if (mouseX > gameRect.width - 20) mouseX = gameRect.width - 20;
+                    const playerHalfWidth = player.clientWidth / 2;
+                    if (mouseX < playerHalfWidth) mouseX = playerHalfWidth;
+                    if (mouseX > gameRect.width - playerHalfWidth) mouseX = gameRect.width - playerHalfWidth;
 
-                player.style.left = `${mouseX}px`;
-                playerX = mouseX;
-            }
-        });
+                    player.style.left = `${mouseX - playerHalfWidth}px`;
+                }
+            });
+        }
 
-        // Controles mobile
         btnLeft.addEventListener('click', () => {
             if (!isGameOver) {
                 playerX -= moveStep;
@@ -267,18 +275,33 @@ button {
         btnRight.addEventListener('click', () => {
             if (!isGameOver) {
                 playerX += moveStep;
-                if (playerX > gameContainer.clientWidth - 40) playerX = gameContainer.clientWidth - 40;
+                if (playerX > gameContainer.clientWidth - player.clientWidth) playerX = gameContainer.clientWidth - player.clientWidth;
                 player.style.left = `${playerX}px`;
             }
         });
 
+        gameContainer.addEventListener('touchstart', (e) => {
+            if (isGameOver) return;
+            const touchX = e.touches[0].clientX;
+            const gameRect = gameContainer.getBoundingClientRect();
+
+            if (touchX < gameRect.left + gameRect.width / 2) {
+                playerX -= moveStep;
+                if (playerX < 0) playerX = 0;
+            } else {
+                playerX += moveStep;
+                if (playerX > gameContainer.clientWidth - player.clientWidth) playerX = gameContainer.clientWidth - player.clientWidth;
+            }
+            player.style.left = `${playerX}px`;
+        });
+        
         function createObstacle() {
             if (isGameOver) return;
 
             const obstacle = document.createElement('div');
             obstacle.classList.add('obstacle');
             
-            const randomX = Math.random() * (gameContainer.clientWidth - 60);
+            const randomX = Math.random() * (gameContainer.clientWidth - obstacle.clientWidth);
             obstacle.style.left = `${randomX}px`;
             
             gameContainer.appendChild(obstacle);
