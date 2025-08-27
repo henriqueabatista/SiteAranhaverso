@@ -101,7 +101,7 @@ header .container{
 
 .bannercontato{
     background: url(../img/novobanner.jpeg) no-repeat center/cover;
-    height: 550px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -132,6 +132,90 @@ header .container{
     font-size: 2em;
     color: #ffffff;
 }
+
+.formulario-contato {
+    background-color: darkgray;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow:  0 4px 8px rgba(177, 174, 174);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .grupo-form input,
+  .grupo-form select,
+  .grupo-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+
+  .grupo-form input[type="checkbox"],
+  .grupo-form input[type="radio"] {
+    margin-right: 4px;
+    margin-top: 0;
+  }
+
+  .grupo-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .tabela {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+.tabela h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #1e1e1e;
+}
+
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #ffffff;
+}
+
+.tabela th, .tabela td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.tabela th, .film{
+    width: 10px;
+}
+
+.tabela th {
+   
+    background-color: #ff0000 ;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabela tr{
+    background-color:darkgray;
+
+}
+
+
 
 #Sobre{
     padding: 35px;
